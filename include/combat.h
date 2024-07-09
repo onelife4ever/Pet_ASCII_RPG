@@ -6,4 +6,4 @@
 // Система сражений
 void combat(Player *player, Monster *monster);
 
-#endif // COMBAT_H
+#endif  // COMBAT_H

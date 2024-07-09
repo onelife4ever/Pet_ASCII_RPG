@@ -13,4 +13,4 @@ void draw_map(Player *player, Monster monsters[], int monster_count);
 // Функция для проверки возможности перемещения
 int can_move(int x, int y);
 
-#endif // MAP_H
+#endif  // MAP_H

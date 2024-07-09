@@ -6,7 +6,7 @@
 typedef struct {
     int id;
     char name[20];
-    int effect; // Например, увеличение HP или атаки
+    int effect;  // Например, увеличение HP или атаки
 } Item;
 
 typedef struct {
@@ -23,4 +23,4 @@ void add_item(Inventory *inventory, Item item);
 // Использование предмета
 void use_item(Inventory *inventory, int item_index, Player *player);
 
-#endif // INVENTORY_H
+#endif  // INVENTORY_H

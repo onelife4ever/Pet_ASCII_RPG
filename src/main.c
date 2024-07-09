@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/game.h"
-#include "../include/map.h"
+
 #include "../include/combat.h"
+#include "../include/game.h"
 #include "../include/inventory.h"
+#include "../include/map.h"
 
 int main() {
     Player player;
@@ -27,14 +28,14 @@ int main() {
             if (player.x == monsters[i].x && player.y == monsters[i].y) {
                 combat(&player, &monsters[i]);
                 if (monsters[i].hp <= 0) {
-                    monsters[i].x = -1; // Убираем монстра с карты
+                    monsters[i].x = -1;  // Убираем монстра с карты
                     monsters[i].y = -1;
                 }
             }
         }
 
         // Пример использования предмета из инвентаря
-        use_item(&inventory, 0, &player); // Используем первый предмет в инвентаре
+        use_item(&inventory, 0, &player);  // Используем первый предмет в инвентаре
     }
 
     printf("Game Over!\n");

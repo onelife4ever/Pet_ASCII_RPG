@@ -1,10 +1,9 @@
 #include "../include/inventory.h"
+
 #include <stdio.h>
 #include <string.h>
 
-void init_inventory(Inventory *inventory) {
-    inventory->item_count = 0;
-}
+void init_inventory(Inventory *inventory) { inventory->item_count = 0; }
 
 void add_item(Inventory *inventory, Item item) {
     if (inventory->item_count < MAX_ITEMS) {

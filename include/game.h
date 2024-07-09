@@ -17,8 +17,7 @@ typedef struct {
 // Инициализация игры
 void init_game(Player *player, Monster *monsters, int monster_count);
 
-
 // Обработка ввода игрока
 void process_input(Player *player);
 
-#endif // GAME_H
+#endif  // GAME_H

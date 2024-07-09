@@ -1,4 +1,5 @@
 #include "../include/combat.h"
+
 #include <stdio.h>
 
 void combat(Player *player, Monster *monster) {
@@ -7,7 +8,7 @@ void combat(Player *player, Monster *monster) {
         monster->hp -= player->attack;
         printf("You hit the monster! Monster HP: %d\n", monster->hp);
         if (monster->hp > 0) {
-            player->hp -= 1; // Монстр наносит ответный удар
+            player->hp -= 1;  // Монстр наносит ответный удар
             printf("Monster hits you! Your HP: %d\n", player->hp);
         }
     }
