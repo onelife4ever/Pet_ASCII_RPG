@@ -2,7 +2,7 @@
 #define INVENTORY_H
 
 #define MAX_ITEMS 10
-
+#include "game.h"
 typedef struct {
     int id;
     char name[20];
