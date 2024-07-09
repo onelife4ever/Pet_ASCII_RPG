@@ -2,7 +2,7 @@
 #define MAP_H
 
 #include "game.h"
-
+#include <stdio.h>
 // Размеры карты
 #define MAP_WIDTH 120
 #define MAP_HEIGHT 40
