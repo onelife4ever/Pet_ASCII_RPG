@@ -47,7 +47,7 @@ void draw_map(Player *player, Monster monsters[], int monster_count) {
     for (int y = 0; y < MAP_HEIGHT; y++) {
         for (int x = 0; x < MAP_WIDTH; x++) {
             if (player->x == x && player->y == y) {
-                printf("@");  // Игрок
+                printf("!@!");  // Игрок
             } else {
                 int is_monster = 0;
                 for (int i = 0; i < monster_count; i++) {
@@ -68,7 +68,8 @@ void draw_map(Player *player, Monster monsters[], int monster_count) {
 
 // Функция для проверки возможности перемещения
 int can_move(int x, int y) {
-    if (x < 0 && x >= MAP_WIDTH & y < 0 && y >= MAP_HEIGHT && lab_map[y][x] != '#' && lab_map[y][x] != '|') {
+    if (x < 0 && x >= MAP_WIDTH && y < 0 && y >= MAP_HEIGHT && lab_map[y][x] != '#' && lab_map[y][x] != '|') {
         return 0;
-    }
+    } 
+    return 1;
 }

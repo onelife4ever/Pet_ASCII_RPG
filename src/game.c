@@ -3,7 +3,7 @@
 #include "../include/map.h"
 
 void init_game(Player *player, Monster *monsters, int monster_count) {
-    player->x = 0;
+    player->x = 40;
     player->y = 110;
     player->hp = 10;
     player->attack = 2;

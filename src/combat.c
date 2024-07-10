@@ -39,9 +39,9 @@ int check_monster(int x, int y, int i, int j) {
     int i_min = i - 1, j_min = j - 1;
     int i_plus = i + 1, j_plus = j + 1;
 
-    if (i_min == x || j_min == y || i_plus == x || i_plus == y) {
+    if (i_min == x || j_min == y || i_plus == x || j_plus == y) {
         sum = 1;
-    }
+    } else {sum = 0;}
     
     return sum;
 }
