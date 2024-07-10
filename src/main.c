@@ -7,6 +7,37 @@
 #include "../include/map.h"
 
 int main() {
+
+    // // Загрузим карту
+    // load_map("map.txt");
+
+    // Player player = {1, 1, 100}; // начальная позиция игрока
+    // Monster monsters[1] = {{10, 10, 50}}; // начальная позиция монстра
+
+    // char command;
+    // while (1) {
+    //     draw_map(&player, monsters, 1);
+    //     printf("Enter command (WASD to move, Q to quit): ");
+    //     scanf(" %c", &command);
+
+    //     int new_x = player.x;
+    //     int new_y = player.y;
+
+    //     switch (command) {
+    //         case 'w': new_y--; break;
+    //         case 's': new_y++; break;
+    //         case 'a': new_x--; break;
+    //         case 'd': new_x++; break;
+    //         case 'q': return 0;
+    //         default: continue;
+    //     }
+
+    //     if (can_move(new_x, new_y)) {
+    //         player.x = new_x;
+    //         player.y = new_y;
+    //     }
+    // }
+
     Player player;
     int monster_count = 15;
     Monster monsters[monster_count];
@@ -36,11 +67,9 @@ int main() {
                 } else {
                     printf("Game Over!\n");
                     return 0;
-                    }
+                }
             }
-        }
-
-        
+        }   
     }
 
     printf("Game Over!\n");

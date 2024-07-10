@@ -1,10 +1,11 @@
 #include "../include/game.h"
 #include "../include/combat.h"
 #include "../include/map.h"
+#include "../include/inventory.h"
 
 void init_game(Player *player, Monster *monsters, int monster_count) {
-    player->x = 40;
-    player->y = 110;
+    player->x = 38;
+    player->y = 114;
     player->hp = 10;
     player->attack = 2;
 
@@ -40,6 +41,8 @@ void process_input(Player *player) {
             break;
         } else {break;}
         // case 'i':
-        // use_item(&inventory, 0, &player);  // Используем первый предмет в инвентаре
+        //     select_item();
+            
+
     }
 }

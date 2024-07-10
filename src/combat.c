@@ -15,16 +15,13 @@ void combat(Player *player, Monster *monster) {
             break;
             case 'r':
             if(player->hp > 1){
-                goto run;  
+                printf("You escaped from the monster.");
+                player->x -= 1;
+                player->y -= 1;
+                break;
             }
         }
     }
-    
-    run: 
-    printf("You escaped from the monster.");
-    player->x -= 1;
-    player->y -= 1;
-
     if (player->hp > 0 && monster->hp <= 0) {
         printf("You defeated the monster!\n");
     } else {

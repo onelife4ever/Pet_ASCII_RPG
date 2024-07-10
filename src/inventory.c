@@ -12,6 +12,23 @@ void add_item(Inventory *inventory, Item item) {
     }
 }
 
+// void select_item(){
+//     printf("You have next items:\n")
+//             for (int i = 0; i <= 10; i++){
+//                 printf("%d. %c, effect: %d.", Item.id[i], Item.name[i], Item.effect[i]);
+//             }
+//                 switch (expression)
+//             {
+//             case /* constant-expression */:
+//                 /* code */
+//                 break;
+            
+//             default:
+//                 break;
+//             }
+        // use_item(&inventory, 0, &player);  // Используем первый предмет в инвентаре
+// }
+
 void use_item(Inventory *inventory, int item_index, Player *player) {
     if (item_index >= 0 && item_index < inventory->item_count) {
         Item item = inventory->items[item_index];

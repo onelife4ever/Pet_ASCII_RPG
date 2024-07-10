@@ -23,6 +23,8 @@ void init_inventory(Inventory *inventory);
 // Добавление предмета в инвентарь
 void add_item(Inventory *inventory, Item item);
 
+void select_item();
+
 // Использование предмета
 void use_item(Inventory *inventory, int item_index, Player *player);
 
